@@ -153,7 +153,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="text-center mt-4 text-3xl font-bold">Birthday Wishes</h1>
+        {/* <h1 className="text-center mt-4 text-3xl font-bold">Birthday Wishes</h1> */}
         <VideoScroll />
       </main>
     </div>

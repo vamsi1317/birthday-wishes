@@ -54,7 +54,7 @@ const wishes = [
 
 const VideoCard = ({ wish, isActive }) => (
   <div className={`flex flex-col justify-center items-center h-screen ${isActive ? 'block' : 'hidden'}`}>
-    <video key={wish.name} controls className="h-full w-full object-cover">
+    <video key={wish.name} controls className="h-full w-full object-cover" autoPlay autoplay>
       <source src={wish.videoUrl} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
