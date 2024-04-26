@@ -47,9 +47,23 @@ import React, { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 
 const wishes = [
-  { name: "Alice", videoUrl: "/videos/sample1.mp4" },
-  { name: "Bob", videoUrl: "/videos/sample2.mp4" },
-  { name: "Charlie", videoUrl: "/videos/sample3.mp4" }
+  { name: "Anu and Vinni", videoUrl: "/videos/anuAndVinni.mp4" },
+  { name: "Pravallika and Anil", videoUrl: "/videos/anilAndPravallika.mp4" },
+  { name: "NA", videoUrl: "/videos/btech-friend1.mp4"},
+  { name: "NA", videoUrl: "/videos/btechfriend2.mp4"},
+  { name: "NA", videoUrl: "/videos/btechfriend3.mp4"},
+  { name: "NA", videoUrl: "/videos/coullegesBofa.mp4"},
+  { name: "Yashu", videoUrl: "/videos/yashu.mp4"},
+  { name: "Mounika", videoUrl: "/videos/mounika.mp4"},
+  { name: "Rama Devi", videoUrl: "/videos/ramadevi.mp4"},
+  { name: "Mani", videoUrl: "/videos/mani.mp4"},
+  { name: "Teja", videoUrl: "/videos/teja.mp4"},
+  { name: "Madhav", videoUrl: "/videos/madhav.mp4"},
+  { name: "Attaya", videoUrl: "/videos/amma.mp4"},
+  { name: "Mavvaya", videoUrl: "/videos/nanna.mp4"},
+  { name: "Siddhu", videoUrl: "/videos/siddhu.mp4"},
+  { name: "Attaya", videoUrl: "/videos/attaya.mp4"},
+  { name: "Vamsi", videoUrl: "/videos/vamsi.mp4"},
 ];
 
 const VideoCard = ({ wish, isActive }) => (
@@ -59,7 +73,7 @@ const VideoCard = ({ wish, isActive }) => (
       Your browser does not support the video tag.
     </video>
     <div className="absolute bottom-10 text-white text-xl font-bold p-4">
-      {wish.name}'s Wish
+    {wish.name!=="NA" ? <span>{wish.name}'s Wish</span> : null }
     </div>
   </div>
 );
@@ -80,6 +94,9 @@ const VideoScroll = () => {
       {wishes.map((wish, index) => (
         <VideoCard key={index} wish={wish} isActive={index === currentIndex} />
       ))}
+      {/* <div>
+        Made the app with love by Vamsi Tallam
+      </div> */}
     </div>
   );
 };
