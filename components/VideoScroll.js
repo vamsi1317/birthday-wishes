@@ -62,7 +62,7 @@ const wishes = [
   { name: "Attaya", videoUrl: "/videos/amma.mp4"},
   { name: "Mavvaya", videoUrl: "/videos/nanna.mp4"},
   { name: "Siddhu", videoUrl: "/videos/siddhu.mp4"},
-  { name: "Attaya", videoUrl: "/videos/attaya.mp4"},
+  { name: "Attaya", videoUrl: "/videos/attayya.mp4"},
   { name: "Vamsi", videoUrl: "/videos/vamsi.mp4"},
 ];
 
